@@ -51,7 +51,7 @@ class Aidbox:
         else:
             self.resources_cache = defaultdict(dict)
 
-    def reference(self, resourceType, id, **kwargs):
+    def reference(self, resourceType=None, id=None, **kwargs):
         if not resourceType or not id:
             raise TypeError(
                 'Arguments resourceType and id are required')
